@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="com.ujujzk.androiddesignsupport.app.RelativeLayoutBehavior">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="hint_email"
+                    android:focusableInTouchMode="true"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="200dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/spinner"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="13.5dp"
+                        >
+
+                        <EditText
+                            android:id="@+id/text_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:paddingBottom="17dp"
+                            android:focusableInTouchMode="true"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        app:ms_alignLabels="false"
+                        app:ms_baseColor="@color/base"
+                        app:ms_enableErrorLabel="true"
+                        app:ms_enableFloatingLabel="true"
+                        app:ms_errorColor="@color/error"
+                        app:ms_floatingLabelColor="@color/base"
+                        app:ms_hint="item"
+                        app:ms_hintColor="@color/hint"
+                        app:ms_multiline="false"
+                        app:ms_thickness="1dp"
+                        />
+
+                </RelativeLayout>
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_done"
+                app:fab_colorNormal="#FF5722"
+                app:fab_colorPressed="#FF5722"
+                app:fab_colorRipple="#99FFFFFF"
+                app:fab_shadowColor="#66000000"
+                app:fab_shadowRadius="4dp"
+                app:fab_shadowXOffset="1dp"
+                app:fab_shadowYOffset="3dp"
+                app:fab_showShadow="true"
+                app:layout_behavior="com.ujujzk.androiddesignsupport.app.FloatingActionButtonBehavior" />
+
+
+        </RelativeLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="floating_label">#FF5722</color>
+    <color name="arrow">#666</color>
+    <color name="hint">#888</color>
+    <color name="error">#fc0101</color>
+    <color name="highlight">#0505fc</color>
+    <color name="base">#999</color>
+</resources>
